@@ -1,26 +1,47 @@
-## YaTube API
-# Description
-API that provides such functions as:
-* create posts
-* add commentaries
-* follows the authors you want to
+## API YaTube 
+YaTube is a service for creating posts. Users can leave comments, as well as subscribe to the authors they like.
+
+This project is a REST API for [YaTube project](https://github.com/IuriyLeb/yatube_final)
+
 # Installation
-1. clone repository in your local mashine
-2. create and activate virualenv
 
-`python -m venv venv`
+Сlone repository in your local mashine
 
-`source venv/Scripts/activate`
-3. create and make migrations
+```bash
+git clone https://github.com/IuriyLeb/yatube_final.git
+```
 
-`python manage.py makemigrations`
+Create and activate virualenv
 
-`python manage.py migrate`
+```bash
+python -m venv venv
+```
 
-4. run project on your local machine
+```bash
+source venv/Scripts/activate
+```
 
-`python manage.py runserver`
+Then you need to install requirements
 
+```bash
+pip install -r requirements.txt
+```
+
+Create and make migrations
+
+```bash
+python manage.py makemigrations
+```
+
+```bash
+python manage.py migrate
+```
+
+Run project on your local machine
+
+```bash
+python manage.py runserver
+```
 # Usage
 
 API's domens are in `/api/v1/`
